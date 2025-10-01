@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="style.css">
+<title>lab2</title>
+<style>
+  body { font-family: Arial, sans-serif; padding:20px; background:#f7f7f7; }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+
+  table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    table-layout: fixed; 
+    border: 2px solid #000;
+    background: #fff;
+  }
+
+  col.col1 { width: 25.35%; }   
+  col.col2 { width: 12.93%; }   
+  col.col3 { width: 12.07%; }   
+  col.col4 { width: 49.65%; }   
+
+  td {
+    border: 2px solid #000;
+    padding: 0.35rem;
+    text-align: center;
+    vertical-align: middle;
+    height: 44px; 
+    box-sizing: border-box;
+  }
+
+  tr.row1 td { height: 54px; }  
+  tr.row2 td { height: 36px; }  
+  tr.row3 td { height: 36px; }  
+  tr.row4 td { height: 28px; }  
+
+  tr.row1 td {
+    background-color: #558f8f;
+    color: #000000;
+  }
+  tr.row1:hover td {
+    background-color: #f5f555;
+    color: #000000;
+  }
+
+  tr.row2 td {
+    background-color: #f5f555;
+    color: #000000;
+  }
+  tr.row2:hover td {
+    background-color: #558f8f;
+    color: #000000;
+  }
+
+</style>
+</head>
+<body>
+  <h2>Завдання 1</h2>
+  <div class="wrap">
+
+    <table>
+      <colgroup>
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+      </colgroup>
+
+      <tr class="row1">
+        <td>Степанчук</td>
+        <td colspan="2">Тимофій</td>
+        <td>Вадимович</td>
+      </tr>
+
+      <tr class="row2">
+        <td>ІС-33</td>
+        <td rowspan="2"></td>
+        <td>Лаба 2</td>
+        <td>ІС-33</td>
+      </tr>
+
+      <tr class="row3">
+        <td></td>
+        <td></td> 
+        <td></td>
+      </tr>
+
+      <tr class="row4">
+        <td></td>
+        <td colspan="2"></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Завдання 2</h2>
+
+  <h2>position:</h2>
+  <div class="venn position">
+    <div class="circle red"></div>
+    <div class="circle blue"></div>
+    <div class="circle green"></div>
+  </div>
+
+  <h2>transform:</h2>
+  <div class="venn transform">
+    <div class="circle red"></div>
+    <div class="circle blue"></div>
+    <div class="circle green"></div>
+  </div>
+</body>
+</html>
