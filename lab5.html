@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Лаб5</title>
+<link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Форма для заповнення</h2>
+
+    <form id="myForm">
+        <div class="form-group">
+            <label for="fullName">ПІБ</label>
+            <input type="text" id="fullName" placeholder="ТТТТТТ Т.Т.">
+        </div>
+
+        <div class="form-group">
+            <label for="group">Група</label>
+            <input type="text" id="group" placeholder="ТТ-ЧЧ">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="text" id="phone" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Адреса</label>
+            <input type="text" id="address" placeholder="м. ЧЧЧЧЧЧ">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" placeholder="тттттт@ттттт.com">
+        </div>
+
+        <button type="button" id="submitBtn">Відправити</button>
+    </form>
+</div>
+
+<div class="table-container">
+    <h2>Таблиця 6x6</h2>
+    <label>Виберіть колір для клітинки: 
+        <input type="color" id="colorPicker" value="#ff0000">
+    </label>
+    <table id="myTable"></table>
+</div>
+
+<script src="script5.js"></script>
+</body>
+</html>

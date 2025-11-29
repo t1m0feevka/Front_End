@@ -1,35 +1,31 @@
-// Варіант 145
 const n = 145;
-const firstElementNumber = (n % 10) + 1; // 6
-const secondElementNumber = firstElementNumber + 1; // 7
+const firstElementNumber = (n % 10) + 1; 
+const secondElementNumber = firstElementNumber + 1; 
 
-// Зміна кольорів через getElementById (element6)
 let firstClicked = false;
 document.getElementById(`element${firstElementNumber}`).addEventListener('click', function() {
     firstClicked = !firstClicked;
     if(firstClicked) {
-        this.style.backgroundColor = '#ffcc00'; // фон
-        this.style.color = '#0000ff';           // текст
+        this.style.backgroundColor = '#ffcc00'; 
+        this.style.color = '#0000ff';           
     } else {
         this.style.backgroundColor = '';
         this.style.color = '';
     }
 });
 
-// Зміна кольорів через querySelector (element7)
 let secondClicked = false;
 document.querySelector(`#element${secondElementNumber}`).addEventListener('click', function() {
     secondClicked = !secondClicked;
     if(secondClicked) {
-        this.style.backgroundColor = '#00ccff'; // фон
-        this.style.color = '#ff0000';           // текст
+        this.style.backgroundColor = '#00ccff'; 
+        this.style.color = '#ff0000';           
     } else {
         this.style.backgroundColor = '';
         this.style.color = '';
     }
 });
 
-// Кнопки для керування зображенням
 let img = document.getElementById('tbilisi-img');
 const container = img.parentElement;
 
@@ -40,7 +36,7 @@ document.getElementById('add-btn').addEventListener('click', () => {
         newImg.src = 'https://www.advantour.com/img/georgia/images/tbilisi.jpg';
         newImg.width = 500;
         container.appendChild(newImg);
-        img = newImg; // оновлюємо змінну img
+        img = newImg;
     }
 });
 
@@ -55,6 +51,6 @@ document.getElementById('decrease-btn').addEventListener('click', () => {
 document.getElementById('remove-btn').addEventListener('click', () => {
     if (img) {
         img.remove();
-        img = null; // очищаємо змінну img
+        img = null; 
     }
 });
